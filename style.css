@@ -1,0 +1,7 @@
+.cmd{
+	color: chartreuse;
+	background: black;
+	padding: 5px;
+	margin: 10px;
+}
+.cmd:before
