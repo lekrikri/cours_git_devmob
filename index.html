@@ -29,6 +29,58 @@
 
     Ajouter des fichiers
     <div class="cmd">git add "fichier"</div>
+    Ajouter TOUS LES FICHIERS :
+    <div class="cmd">git add .</div>
+
+    Commit (enregistrer) les fichiers ajoutes
+    <div class="cmd">git commit</div>
+    <div class="warning">Un commit necessite toujours un message</div>
+    commit avec message :
+    <div class="cmd">git commit -m "message"</div>
+    commit vec add + message (fonctionne sur les fichiers deja add precedemment)
+    <div class="cmd">git commit -a -m "messaage"</div>
+
+    <h2>Correction des fichiers</h2>
+    Voir les differents commit :
+    <div class="cmd">git log</div>
+
+    Corriger les modifications sur un fichier (pas encore add) :
+    <div class="cmd">git checkout "fichier"</div>
+
+    Supprimer un add :
+    <div class="cmd">git reset "fichier"</div>
+    <div class="cmd">git reset </div>
+
+    Supprimer le dernier commit :
+    <div class="cmd">git commit reset HEAD^^</div>
+
+    <h2>La notion de branche</h2>
+    <p>Une branche est une copie du projet. Elle permet de developper en paralelle de nouvelles fonctionalitees. Lorsqu'on considere les nouveautes operationnelles, on peut les rappatrier sur la version principale (master)</p>
+
+    Voir les branche:
+    <div class="cmd">git branch</div>
+
+    Creer une nouvelle branche :
+    <div class="cmd">git branch "nom"</div>
+
+    Se placer sur une branche :
+    <div class="cmd">git checkout "nom"</div>
+
+    Voir les differents entre deux branches :
+    <div class="cmd">git diff "nom"..master</div>
+
+    Apporter les modif effectuees sur une branche dans master (il faut etre sur master) :
+    <div class="cmd">git checkout master</div>
+    <div class="cmd">git merge "nom"</div>
+
+    Remplacer master par une branche :
+    <div class="cmd">git checkout master</div>
+    <div class="cmd">git fetch . "nom"</div>
+    <div class="warning">Le fetch va litteralement remplacer master par la branche. Il s'agit donc d'une grosse modification dans le projet (ex: version 2)</div>
+
+
+    <h2>Repertoire distant et GitHub</h2>
+
 
 
 
